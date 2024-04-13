@@ -1,9 +1,10 @@
 /* Root and common styles */
 :root {
     --ghostly-white: #f8f8ff;
+    --link-color: #0077b5; /* A shade of blue */
 }
 
-body, .card {
+body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--ghostly-white);
     color: #333;
@@ -18,34 +19,45 @@ body, .card {
 /* Card styles */
 .card {
     width: 90%;
-    max-width: 600px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
 }
 
 .header img {
-    width: 100%;
-    aspect-ratio: 1 / 1; /* Makes the image square */
-    object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-/* Rounded borders for the profile image */
-.profile-image {
-    border-radius: 50%;
     width: 120px;
     height: 120px;
+    border-radius: 50%; /* Rounded borders for the profile image */
     object-fit: cover;
-    margin: 20px auto;
     display: block;
-    border: 5px solid #f1f1f1; /* Light border for the profile picture */
+    margin: 0 auto;
+    border: 3px solid #f1f1f1;
 }
 
-.content {
-    padding: 20px;
+.links-container {
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.link-button {
+    text-decoration: none;
+    color: var(--link-color);
+    padding: 15px;
     text-align: center;
+    border-top: 1px solid #f1f1f1;
+    background: white;
+    transition: background-color 0.3s;
+}
+
+.link-button:hover {
+    background-color: #f0f0f0; /* Light grey background on hover */
 }
 
 .title {
@@ -53,20 +65,7 @@ body, .card {
     font-weight: 400;
 }
 
-.contact-info p, .social-links button {
-    margin: 10px 0;
-}
-
-.contact-info a {
-    color: #0077b5; /* A shade of blue for links */
-    text-decoration: none;
-}
-
-.social-links button {
-    background: #0077b5;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
+/* First link does not need a top border */
+.link-button:first-child {
+    border-top: none;
 }
