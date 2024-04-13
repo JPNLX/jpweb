@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Business Card</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <script src="app.js" defer></script>
 </head>
 <body>
     <div class="card">
         <div class="header">
-            <img src="your-photo.jpg" alt="Your Name" class="profile-image">
+            <img src="icons/icon-192x192.png" alt="Your Name" class="profile-image">
         </div>
         <div class="content">
             <h1>Your Name</h1>
@@ -20,9 +21,9 @@
                 <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
             </div>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a> |
-                <a href="https://www.twitter.com/yourprofile">Twitter</a> |
-                <a href="https://www.github.com/yourprofile">GitHub</a>
+                <button onclick="window.location.href='https://www.linkedin.com/in/yourprofile';">LinkedIn</button>
+                <button onclick="window.location.href='https://www.twitter.com/yourprofile';">Twitter</button>
+                <button onclick="window.location.href='https://www.github.com/yourprofile';">GitHub</button>
             </div>
         </div>
     </div>
