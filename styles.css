@@ -1,92 +1,72 @@
-body {
+/* Root and common styles */
+:root {
+    --ghostly-white: #f8f8ff;
+}
+
+body, .card {
     font-family: 'Roboto', sans-serif;
-    background-color: #e8effa;
+    background-color: var(--ghostly-white);
+    color: #333;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: #333;
 }
 
+/* Card styles */
 .card {
-    background-color: #ffffff;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    overflow: hidden;
+}
+
+.header img {
     width: 100%;
-    max-width: 340px; /* maintain a reasonable max-width on desktop */
-    min-height: 100vh; /* make it full screen on mobile */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    aspect-ratio: 1 / 1; /* Makes the image square */
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-.header {
-    background: linear-gradient(135deg, #6e8efb, #a777e3);
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
+/* Rounded borders for the profile image */
 .profile-image {
-    width: 200px; /* increased from 100px to 200px */
-    height: 200px; /* maintain aspect ratio */
     border-radius: 50%;
-    border: 4px solid white;
-    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin: 20px auto;
     display: block;
+    border: 5px solid #f1f1f1; /* Light border for the profile picture */
 }
 
 .content {
     padding: 20px;
     text-align: center;
-    flex-grow: 1; /* allows content to fill available space */
 }
 
-h1, .title, .contact-info p, .social-links button {
-    font-size: 16px; /* adjust font size as needed */
+.title {
+    color: #666;
+    font-weight: 400;
 }
 
-.social-links button {
-    background-color: #ffffff;
-    color: #4a47a3;
-    border: 2px solid #4a47a3;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.social-links button:hover {
-    background-color: #4a47a3;
-    color: white;
+.contact-info p, .social-links button {
+    margin: 10px 0;
 }
 
 .contact-info a {
+    color: #0077b5; /* A shade of blue for links */
     text-decoration: none;
-    color: #6e8efb;
-    transition: color 0.3s;
 }
 
-.contact-info a:hover {
-    text-decoration: underline;
+.social-links button {
+    background: #0077b5;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
-
-@media (max-width: 600px) {
-    .card {
-        border-radius: 0; /* full width and no border-radius on smaller screens */
-        box-shadow: none;
-    }
-
-    .profile-image {
-        width: 40%; /* dynamic size based on screen width */
-        height: auto;
-    }
-
-    .content, .header {
-        padding: 10px;
-    }
-
-    h1, .title, .contact-info p, .social-links
