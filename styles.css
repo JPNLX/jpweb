@@ -34,19 +34,6 @@ body {
     border-radius: 50px; /* Very rounded corners for the profile section */
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    position: relative; /* Positioning context for the Pisces symbol */
-}
-
-.pisces-symbol {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 80%;
-    height: 50%;
-    transform: translate(-50%, -50%);
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50"><circle cx="25" cy="25" r="20" fill="rgba(255, 255, 255, 0.2)" /><circle cx="75" cy="25" r="20" fill="rgba(255, 255, 255, 0.2)" /></svg>');
-    background-size: cover;
-    z-index: -1;
 }
 
 .profile-image {
@@ -68,4 +55,24 @@ body {
 .link-button {
     text-decoration: none;
     color: var(--text-color);
-    background: var
+    background: var(--link-normal);
+    padding: 15px;
+    text-align: center;
+    border: none;
+    border-radius: 10px; /* Rounded corners for buttons */
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle white noise texture */
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPg0KICA8ZmlsdGVyIGlkPSJub2lzZSI+DQogICAgPGZlVHVyYnVsZW5jZSB0eXBlPSJmcnFyYXRpbCIgYmFzZUZyZXF1ZW5jeT0iMiIgbnVtT2N0YXZlcz0iMyIgc3RpdGNoVGlscz0ic3RpdGNoIj48L2ZlVHVyYnVsZW5jZT4NCiAgPC9maWx0ZXI+DQogIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCNub2lzZSkiPjwvcmVjdD4NCjwvc3ZnPg==");
+    background-size: cover;
+}
+
+.link-button:hover {
+    background-color: var(--link-hover);
+    cursor: pointer;
+}
+
+.title {
+    color: var(--text-color);
+    font-weight: 400;
+}
