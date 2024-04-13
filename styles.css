@@ -50,22 +50,27 @@ h1 {
     margin-bottom: 10px;
 }
 
-.contact-info p, .social-links a {
+.contact-info p, .social-links button {
     font-weight: 300;
     color: #666;
     font-size: 16px;
     margin: 5px 0;
 }
 
-.social-links a {
+.social-links button {
+    background-color: #ffffff;
     color: #4a47a3;
-    text-decoration: none;
-    transition: color 0.3s;
+    border: 2px solid #4a47a3;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.social-links a:hover {
-    color: #6e8efb;
-    text-decoration: underline;
+.social-links button:hover {
+    background-color: #4a47a3;
+    color: white;
 }
 
 .contact-info a {
@@ -93,7 +98,7 @@ h1 {
         padding: 15px;
     }
 
-    h1, .title, .contact-info p, .social-links a {
+    h1, .title, .contact-info p, .social-links button {
         font-size: 14px;
     }
 }
