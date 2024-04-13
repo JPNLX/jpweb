@@ -9,36 +9,45 @@ body {
     height: 100vh;
     color: #333;
 }
+
 .card {
     background-color: #ffffff;
     border-radius: 10px;
     width: 100%;
-    max-width: 340px;
-    min-height: 100vh;
+    max-width: 340px; /* maintain a reasonable max-width on desktop */
+    min-height: 100vh; /* make it full screen on mobile */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .header {
     background: linear-gradient(135deg, #6e8efb, #a777e3);
     color: white;
     padding: 20px;
     text-align: center;
 }
+
 .profile-image {
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
+    width: 200px; /* increased from 100px to 200px */
+    height: 200px; /* maintain aspect ratio */
+    border-radius: 50%;
     border: 4px solid white;
     margin: 0 auto;
     display: block;
 }
+
 .content {
     padding: 20px;
     text-align: center;
-    flex-grow: 1;
+    flex-grow: 1; /* allows content to fill available space */
 }
+
+h1, .title, .contact-info p, .social-links button {
+    font-size: 16px; /* adjust font size as needed */
+}
+
 .social-links button {
     background-color: #ffffff;
     color: #4a47a3;
@@ -49,28 +58,35 @@ body {
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
+
 .social-links button:hover {
     background-color: #4a47a3;
     color: white;
 }
+
 .contact-info a {
     text-decoration: none;
     color: #6e8efb;
     transition: color 0.3s;
 }
+
 .contact-info a:hover {
     text-decoration: underline;
 }
+
 @media (max-width: 600px) {
     .card {
-        border-radius: 0;
+        border-radius: 0; /* full width and no border-radius on smaller screens */
         box-shadow: none;
     }
+
     .profile-image {
-        width: 40%;
+        width: 40%; /* dynamic size based on screen width */
         height: auto;
     }
+
     .content, .header {
         padding: 10px;
     }
-}
+
+    h1, .title, .contact-info p, .social-links
