@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #e8effa;
     margin: 0;
-    padding: 20px;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,10 +13,13 @@ body {
 .card {
     background-color: #ffffff;
     border-radius: 10px;
-    width: 90%;
-    max-width: 340px;
+    width: 100%;
+    max-width: 340px; /* maintain a reasonable max-width on desktop */
+    min-height: 100vh; /* make it full screen on mobile */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .header {
@@ -27,8 +30,8 @@ body {
 }
 
 .profile-image {
-    width: 100px;
-    height: 100px;
+    width: 200px; /* increased from 100px to 200px */
+    height: 200px; /* maintain aspect ratio */
     border-radius: 50%;
     border: 4px solid white;
     margin: 0 auto;
@@ -38,23 +41,11 @@ body {
 .content {
     padding: 20px;
     text-align: center;
+    flex-grow: 1; /* allows content to fill available space */
 }
 
-h1 {
-    font-weight: 500;
-}
-
-.title {
-    font-weight: 300;
-    color: #666;
-    margin-bottom: 10px;
-}
-
-.contact-info p, .social-links button {
-    font-weight: 300;
-    color: #666;
-    font-size: 16px;
-    margin: 5px 0;
+h1, .title, .contact-info p, .social-links button {
+    font-size: 16px; /* adjust font size as needed */
 }
 
 .social-links button {
@@ -85,20 +76,17 @@ h1 {
 
 @media (max-width: 600px) {
     .card {
-        width: 100%;
+        border-radius: 0; /* full width and no border-radius on smaller screens */
         box-shadow: none;
     }
 
     .profile-image {
-        width: 80px;
-        height: 80px;
+        width: 40%; /* dynamic size based on screen width */
+        height: auto;
     }
 
     .content, .header {
-        padding: 15px;
+        padding: 10px;
     }
 
-    h1, .title, .contact-info p, .social-links button {
-        font-size: 14px;
-    }
-}
+    h1, .title, .contact-info p, .social-links
