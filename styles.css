@@ -1,24 +1,82 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f4f4f4;
-}
-.card {
-  max-width: 340px;
-  margin: 10px;
-  padding: 20px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  background-color: white;
-  text-align: center;
-}
-@media (min-width: 600px) {
-  .card {
-    max-width: 500px;
-  }
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
+.card {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 90%; /* responsive width */
+    max-width: 300px; /* max width for larger devices */
+    text-align: center;
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+h1 {
+    color: #333333;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.title {
+    color: #555555;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.contact-info p, .social-links a {
+    color: #666666;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.social-links a {
+    color: #1a0dab;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.contact-info a {
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments for smaller devices */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .card {
+        width: 100%;
+        box-shadow: none; /* Reduce visual clutter on small screens */
+    }
+
+    h1 {
+        font-size: 20px; /* Smaller font size on smaller screens */
+    }
+
+    .title, .contact-info p, .social-links a {
+        font-size: 14px; /* Smaller text for compact display */
+    }
+}
