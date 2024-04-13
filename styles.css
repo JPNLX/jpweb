@@ -1,14 +1,15 @@
 /* Root and common styles */
 :root {
-    --background-color: #f0e8d9; /* Soft beige */
-    --link-normal: #e8d0b3; /* Light beige */
-    --link-hover: #d1b89b; /* Deeper beige */
-    --text-color: #504945; /* Darker tone for text */
+    --background-gradient-start: #f8f8ff; /* Light ghostly white */
+    --background-gradient-end: #e6e6ff; /* Slightly darker ghostly white */
+    --link-normal: #ffffff; /* Pure white */
+    --link-hover: #f0f0f0; /* Light grey */
+    --text-color: #505050; /* Soft grey for text */
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--background-color);
+    background: linear-gradient(to bottom, var(--background-gradient-start), var(--background-gradient-end));
     color: var(--text-color);
     margin: 0;
     padding: 0;
@@ -21,41 +22,46 @@ body {
 .card {
     width: 90%;
     max-width: 400px;
-    background: white;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .profile-section {
-    background: white;
+    background: var(--link-normal);
     text-align: center;
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Subtle shadow under profile */
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .profile-image {
-    width: 100%; /* Responsive width */
+    width: 80%; /* Responsive width */
     aspect-ratio: 1; /* Keeps the image square */
     object-fit: cover;
-    border-radius: 10px; /* Rounded corners */
-    margin: 0 auto;
+    border-radius: 20px; /* Very rounded corners */
     display: block;
+    margin: 0 auto;
 }
 
 .links-section {
     display: flex;
     flex-direction: column;
+    gap: 10px; /* Spacing between buttons */
+    padding: 10px;
 }
 
 .link-button {
     text-decoration: none;
-    color: white;
+    color: var(--text-color);
     background: var(--link-normal);
     padding: 15px;
     text-align: center;
     border: none;
+    border-radius: 10px; /* Rounded corners for buttons */
     transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .link-button:hover {
