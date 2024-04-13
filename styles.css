@@ -1,12 +1,13 @@
 /* Root and common styles */
 :root {
-    --ghostly-white: #f8f8ff;
+    --background-color: #f8f8ff; /* Ghostly white */
     --link-color: #0077b5; /* A shade of blue */
+    --link-hover-color: #005f87;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--ghostly-white);
+    background-color: var(--background-color);
     color: #333;
     margin: 0;
     padding: 0;
@@ -16,56 +17,52 @@ body {
     height: 100vh;
 }
 
-/* Card styles */
+/* Card styling */
 .card {
     width: 90%;
-    max-width: 350px;
+    max-width: 400px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.header {
+.profile-section {
+    background: #ffffff; /* White background for profile section */
     text-align: center;
     padding: 20px;
 }
 
-.header img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%; /* Rounded borders for the profile image */
+.profile-image {
+    width: 100%; /* Responsive width */
+    aspect-ratio: 1; /* Keeps the image square */
     object-fit: cover;
-    display: block;
+    border-radius: 10px; /* Rounded corners */
     margin: 0 auto;
-    border: 3px solid #f1f1f1;
+    display: block;
 }
 
-.links-container {
-    background: white;
+.links-section {
     display: flex;
     flex-direction: column;
 }
 
 .link-button {
     text-decoration: none;
-    color: var(--link-color);
+    color: white;
+    background: var(--link-color);
     padding: 15px;
     text-align: center;
-    border-top: 1px solid #f1f1f1;
-    background: white;
+    border: none;
     transition: background-color 0.3s;
 }
 
 .link-button:hover {
-    background-color: #f0f0f0; /* Light grey background on hover */
+    background-color: var(--link-hover-color); /* Darker blue on hover */
+    cursor: pointer;
 }
 
 .title {
     color: #666;
     font-weight: 400;
-}
-
-/* First link does not need a top border */
-.link-button:first-child {
-    border-top: none;
 }
