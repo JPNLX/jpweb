@@ -1,82 +1,99 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
+    font-family: 'Roboto', sans-serif;
+    background-color: #e8effa;
     margin: 0;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    color: #333;
 }
 
 .card {
     background-color: #ffffff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    width: 90%;
+    max-width: 340px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    width: 90%; /* responsive width */
-    max-width: 300px; /* max width for larger devices */
+}
+
+.header {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    padding: 20px;
     text-align: center;
 }
 
 .profile-image {
-    width: 100%;
-    height: auto;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin: 0 auto;
+    display: block;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
 }
 
 h1 {
-    color: #333333;
-    font-size: 24px;
-    margin-top: 10px;
+    font-weight: 500;
 }
 
 .title {
-    color: #555555;
-    font-size: 18px;
-    margin-top: 5px;
+    font-weight: 300;
+    color: #666;
+    margin-bottom: 10px;
 }
 
 .contact-info p, .social-links a {
-    color: #666666;
+    font-weight: 300;
+    color: #666;
     font-size: 16px;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 .social-links a {
-    color: #1a0dab;
+    color: #4a47a3;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
 .social-links a:hover {
+    color: #6e8efb;
     text-decoration: underline;
 }
 
 .contact-info a {
     text-decoration: none;
+    color: #6e8efb;
+    transition: color 0.3s;
 }
 
 .contact-info a:hover {
     text-decoration: underline;
 }
 
-/* Responsive adjustments for smaller devices */
 @media (max-width: 600px) {
-    body {
-        padding: 10px;
-    }
-
     .card {
         width: 100%;
-        box-shadow: none; /* Reduce visual clutter on small screens */
+        box-shadow: none;
     }
 
-    h1 {
-        font-size: 20px; /* Smaller font size on smaller screens */
+    .profile-image {
+        width: 80px;
+        height: 80px;
     }
 
-    .title, .contact-info p, .social-links a {
-        font-size: 14px; /* Smaller text for compact display */
+    .content, .header {
+        padding: 15px;
+    }
+
+    h1, .title, .contact-info p, .social-links a {
+        font-size: 14px;
     }
 }
