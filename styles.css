@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #e8effa;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,13 +13,10 @@ body {
 .card {
     background-color: #ffffff;
     border-radius: 10px;
-    width: 100%;
-    max-width: 340px; /* maintain a reasonable max-width on desktop */
-    min-height: 100vh; /* make it full screen on mobile */
+    width: 90%;
+    max-width: 340px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    overflow: hidden;
 }
 
 .header {
@@ -30,8 +27,8 @@ body {
 }
 
 .profile-image {
-    width: 200px; /* increased from 100px to 200px */
-    height: 200px; /* maintain aspect ratio */
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     border: 4px solid white;
     margin: 0 auto;
@@ -41,27 +38,34 @@ body {
 .content {
     padding: 20px;
     text-align: center;
-    flex-grow: 1; /* allows content to fill available space */
 }
 
-h1, .title, .contact-info p, .social-links button {
-    font-size: 16px; /* adjust font size as needed */
+h1 {
+    font-weight: 500;
 }
 
-.social-links button {
-    background-color: #ffffff;
+.title {
+    font-weight: 300;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.contact-info p, .social-links a {
+    font-weight: 300;
+    color: #666;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.social-links a {
     color: #4a47a3;
-    border: 2px solid #4a47a3;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-.social-links button:hover {
-    background-color: #4a47a3;
-    color: white;
+.social-links a:hover {
+    color: #6e8efb;
+    text-decoration: underline;
 }
 
 .contact-info a {
@@ -76,17 +80,20 @@ h1, .title, .contact-info p, .social-links button {
 
 @media (max-width: 600px) {
     .card {
-        border-radius: 0; /* full width and no border-radius on smaller screens */
+        width: 100%;
         box-shadow: none;
     }
 
     .profile-image {
-        width: 40%; /* dynamic size based on screen width */
-        height: auto;
+        width: 80px;
+        height: 80px;
     }
 
     .content, .header {
-        padding: 10px;
+        padding: 15px;
     }
 
-    h1, .title, .contact-info p, .social-links
+    h1, .title, .contact-info p, .social-links a {
+        font-size: 14px;
+    }
+}
