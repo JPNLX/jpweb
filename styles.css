@@ -39,7 +39,7 @@ body {
     background: var(--link-normal);
     text-align: center;
     padding: 10px;
-    border-radius: 33px; /* Very rounded corners for the profile section */
+    border-radius: 33px; /* very rounded corners for the profile section */
     margin: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     overflow: auto;
@@ -49,11 +49,14 @@ body {
     background: var(--link-normal);
     text-align: center;
     padding: 10px;
-    border-radius: 33px; /* Very rounded corners for the profile section */
+    padding-top: 55px;
+    border-radius: 33px; /* very rounded corners for the profile section */
     margin: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     overflow: auto;
 }
+
+
 .image-container {
     /* This container helps in managing the shadow effects without altering the image directly */
     display: inline-block;  /* Makes the div wrap tightly around the image */
@@ -69,6 +72,7 @@ body {
     height: auto;
     border-radius: 50%; /* Match the border-radius of the container if rounded corners are desired */
     box-shadow: 0 0 4px 8px rgba(0, 0, 0, 0.1), /* Outer shadow */
+                padding-top: 20px;
 }
 .profile-image {
     width: 80%;
@@ -81,15 +85,21 @@ body {
 }
 
 .squared-image {
-    width: 80%;
+    width: 100%;
     aspect-ratio: 1; /* Keeps the image square */
-    object-fit: cover;
     border-radius: 10%; /* Circular image */
-    display: block;
+    display: flex;
     margin: 0 auto;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
-
+.image-square-container {
+    /* This container helps in managing the shadow effects without altering the image directly */
+    display: inline-block;  /* Makes the div wrap tightly around the image */
+    padding: 20px; /* Space for the outer shadow */
+    background: white; /* Background matching your site's theme, necessary if the shadow is to blend naturally */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2) inset; /* Inward shadow */
+    border-radius: 10%; /* Optional: if you want the shadows to have rounded corners */
+}
 
 .links-section {
     display: flex;
