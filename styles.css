@@ -16,21 +16,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 110vh;
+    height: 100vh;
     overflow: auto;
 }
 
-.cards-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-}
 .card {
-    width: 100%;
+    width: 90%;
     max-width: 400px;
     border-radius: 10px;
-    overflow: auto;
+    overflow: hidden;
     box-shadow: inset 0 0 15px #e0e0e0; /* Golden inward shadow */
 }
 
@@ -38,7 +32,7 @@ body {
     background: var(--link-normal);
     text-align: center;
     padding: 20px;
-    border-radius: 10px; /* Very rounded corners for the profile section */
+    border-radius: 50px; /* Very rounded corners for the profile section */
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     overflow: auto;
@@ -89,9 +83,11 @@ body {
     color: white;
 }
 /* Media query for devices with a max width of 600px */
-@media only screen and (min-width: 780px) {
-    .cards-container {
-        flex-direction: column;
-        flex-wrap: wrap;
+@media (max-width: 600px) {
+    .profile-section {
+        padding: 20px; /* Further reduce padding for small screens */
+        margin: 10px; /* Further reduce margin */
     }
-}
+    .profile-image {
+        width: 90%; /* Slightly reduce image size */
+    }
