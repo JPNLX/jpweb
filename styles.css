@@ -126,7 +126,7 @@ body {
 
 /* Specific hover and active styles for all link buttons */
 .link-button:hover {
-  box-shadow: 0 5px #666;
+  box-shadow: 0 1px #666;
   transform: translateY(4px);
 }
 
