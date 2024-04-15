@@ -81,3 +81,12 @@ body {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Adding a blurrier shadow to text */
     color: white;
 }
+/* Media query for devices with a max width of 600px */
+@media (max-width: 600px) {
+    .profile-section {
+        padding: 10px; /* Further reduce padding for small screens */
+        margin: 5px; /* Further reduce margin */
+    }
+    .profile-image {
+        width: 70%; /* Slightly reduce image size */
+    }
