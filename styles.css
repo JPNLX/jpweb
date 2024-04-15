@@ -85,8 +85,9 @@ body {
 /* Media query for devices with a max width of 600px */
 @media (max-width: 600px) {
     .profile-section {
-        padding: 10px; /* Further reduce padding for small screens */
-        margin: 5px; /* Further reduce margin */
+        padding: 20px; /* Further reduce padding for small screens */
+        margin: 10px; /* Further reduce margin */
+        height: 80%;
     }
     .profile-image {
         width: 70%; /* Slightly reduce image size */
