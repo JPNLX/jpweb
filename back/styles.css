@@ -17,7 +17,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow: auto;
 }
 
 .card {
@@ -25,7 +24,7 @@ body {
     max-width: 400px;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: inset 0 0 15px #e0e0e0; /* Golden inward shadow */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .profile-section {
@@ -35,7 +34,6 @@ body {
     border-radius: 50px; /* Very rounded corners for the profile section */
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    overflow: auto;
 }
 
 .profile-image {
@@ -65,29 +63,16 @@ body {
     transition: background-color 0.3s;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     /* Subtle white noise texture */
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPg0KICA8ZmlsdGVyIGlkPSJub2lzZSI+DQogICAgPGZlVHVyYnVsZW5jZSB0eXBlPSJmcnFyYXRpbCIgYmFzZUZyZXF1ZW5jeT0iMiIgbnVtT2N0YXZlcz0iMyIgc3RpdGNoVGlscz0ic3RpdGNoIj48L2ZlVHVyYnVsZW5jZT4NCiAgPC9maWx0ZXI+DQogIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCNub2lzZSkiPjwvcmVjdD4NCjwvc3ZnPg==");
     background-size: cover;
+}
+
+.link-button:hover {
+    background-color: var(--link-hover);
+    cursor: pointer;
 }
 
 .title {
     color: var(--text-color);
     font-weight: 400;
 }
-.link-button {
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
-    /* Existing styles for .link-button should remain as is */
-}
-
-.link-button:hover {
-    box-shadow: inset 0 0 15px #e0e0e0; /* Golden inward shadow */
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Adding a blurrier shadow to text */
-    color: white;
-}
-/* Media query for devices with a max width of 600px */
-@media (max-width: 600px) {
-    .profile-section {
-        padding: 20px; /* Further reduce padding for small screens */
-        margin: 10px; /* Further reduce margin */
-    }
-    .profile-image {
-        width: 90%; /* Slightly reduce image size */
-    }
