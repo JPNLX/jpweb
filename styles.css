@@ -63,7 +63,6 @@ body {
     transition: background-color 0.3s;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     /* Subtle white noise texture */
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPg0KICA8ZmlsdGVyIGlkPSJub2lzZSI+DQogICAgPGZlVHVyYnVsZW5jZSB0eXBlPSJmcnFyYXRpbCIgYmFzZUZyZXF1ZW5jeT0iMiIgbnVtT2N0YXZlcz0iMyIgc3RpdGNoVGlscz0ic3RpdGNoIj48L2ZlVHVyYnVsZW5jZT4NCiAgPC9maWx0ZXI+DQogIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCNub2lzZSkiPjwvcmVjdD4NCjwvc3ZnPg==");
     background-size: cover;
 }
 
