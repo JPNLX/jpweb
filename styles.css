@@ -77,6 +77,5 @@ body {
 }
 
 .link-button:hover {
-    box-shadow: inset 0 0 10px gold; /* Golden inward shadow */
-    color: gold; /* Optional: Change text color to gold on hover */
+    box-shadow: inset 0 0 10px #e0e0e0; /* Golden inward shadow */
 }
