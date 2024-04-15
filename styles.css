@@ -12,7 +12,7 @@ body {
     background: linear-gradient(to bottom, var(--background-gradient-start), var(--background-gradient-end));
     background-attachment: fixed;
     color: var(--text-color);
-    margin: ;
+    margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -36,6 +36,16 @@ body {
 }
 
 .profile-section {
+    background: var(--link-normal);
+    text-align: center;
+    padding: 10px;
+    border-radius: 33px; /* Very rounded corners for the profile section */
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    overflow: auto;
+}
+
+.profile-qr {
     background: var(--link-normal);
     text-align: center;
     padding: 10px;
@@ -69,6 +79,17 @@ body {
     margin: 0 auto;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
+
+.squared-image {
+    width: 80%;
+    aspect-ratio: 1; /* Keeps the image square */
+    object-fit: cover;
+    border-radius: 10%; /* Circular image */
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
 
 .links-section {
     display: flex;
