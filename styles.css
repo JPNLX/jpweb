@@ -97,6 +97,6 @@ body {
     .body {
         align-items: flex-start;
         height: -webkit-fill-available
-
+        background-attachment: scroll;
     }
 }
