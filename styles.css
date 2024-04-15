@@ -21,6 +21,8 @@ body {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     width: 90%;
     max-width: 400px;
     border-radius: 10px;
@@ -84,10 +86,8 @@ body {
     color: white;
 }
 /* Media query for devices with a max width of 600px */
-@media only screen and (max-width: 600px) {
-    .card{
-        width: 100%
-        -webkit-flex-direction: column;
-        flex-direction: column;
+@media only screen and (min-width: 600px) {
+    .card {
+        flex-direction: row;
     }
 }
