@@ -120,7 +120,7 @@ body {
   outline: none;
   border: none;
   border-radius: 15px; /* Rounded corners like the 'Click Me' button */
-  box-shadow: 0 9px #999; /* Shadow effect for depth */
+  box-shadow: 0 5px #999; /* Shadow effect for depth */
   transition: all 0.3s; /* Smooth transition for hover effects */
 }
 
