@@ -104,3 +104,44 @@ body {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
+/* Existing styles */
+
+/* Add your existing CSS rules here */
+
+/* General link button styles to mimic 'Click Me' button */
+.link-button {
+  display: inline-block;
+  padding: 15px 25px; /* Adjusted to match the 'Click Me' button */
+  font-size: 24px;    /* Adjusted to match the 'Click Me' button */
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-radius: 15px; /* Rounded corners like the 'Click Me' button */
+  box-shadow: 0 9px #999; /* Shadow effect for depth */
+  transition: all 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Specific hover and active styles for all link buttons */
+.link-button:hover {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Since you may have specific colors for each link, maintain those and only add hover changes */
+/* Example with custom colors retained */
+.email-button { background-color: #3498db; } /* Example color for email */
+.phone-button { background-color: #e74c3c; } /* Example color for phone */
+.github-button { background-color: #6e5494; } /* Example color for GitHub */
+.linkedin-button { background-color: #0077b5; } /* Example color for LinkedIn */
+.soundcloud-button { background-color: #ff7700; } /* Example color for SoundCloud */
+
+.email-button:hover,
+.phone-button:hover,
+.github-button:hover,
+.linkedin-button:hover,
+.soundcloud-button:hover {
+  background-color: darken($color, 10%); /* Darken on hover, use your preprocessor or JavaScript to adjust color dynamically */
+}
