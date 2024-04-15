@@ -20,10 +20,15 @@ body {
     overflow: auto;
 }
 
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .card {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     max-width: 400px;
     border-radius: 10px;
     overflow: auto;
@@ -86,8 +91,9 @@ body {
     color: white;
 }
 /* Media query for devices with a max width of 600px */
-@media only screen and (min-width: 600px) {
-    .card {
+@media only screen and (max-width: 600px) {
+    .cards-container {
         flex-direction: row;
+        flex-wrap: wrap;
     }
 }
