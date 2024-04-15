@@ -95,6 +95,7 @@ body {
         flex-direction: column;
     }
     .body {
+        align-items: flex-start;
 
     }
 }
