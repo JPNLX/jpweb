@@ -148,17 +148,17 @@ body {
 
 /* Hover styles for each link button */
 .phone-button:hover {
-    background-color: #007BFF; /* Example blue for phone links */
+    background-color: #b0ceff; /* Example blue for phone links */
 }
 
 .github-button:hover {
-    background-color: #6e5494; /* GitHub's brand color */
+    background-color: #bdb7c7 /* GitHub's brand color */
 }
 
 .linkedin-button:hover {
-    background-color: #0077b5; /* LinkedIn's brand color */
+    background-color: #9cdcff; /* LinkedIn's brand color */
 }
 
 .soundcloud-button:hover {
-    background-color: #ff5500; /* SoundCloud's brand color */
+    background-color: #ffece3; /* SoundCloud's brand color */
 }
