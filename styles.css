@@ -84,8 +84,8 @@ body {
 }
 /* Media query for devices with a max width of 600px */
 @media (max-width: 600px) {
-    .body {
-        marign: 30px;
+    .card {
+        marign: 60px;
     }
     .profile-section {
         padding: 20px; /* Further reduce padding for small screens */
