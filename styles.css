@@ -125,11 +125,11 @@ body {
 }
 
 /* Specific hover and active styles for all link buttons */
-.link-button:hover {
+.button:active {
+  background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-
 /* Since you may have specific colors for each link, maintain those and only add hover changes */
 /* Example with custom colors retained */
 .email-button { background-color: #3498db; } /* Example color for email */
