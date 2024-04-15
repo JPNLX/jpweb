@@ -10,6 +10,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(to bottom, var(--background-gradient-start), var(--background-gradient-end));
+    background-attachment: fixed;
     color: var(--text-color);
     margin: 0;
     padding: 0;
@@ -92,5 +93,8 @@ body {
 @media (max-width: 600px) {
     .container {
         flex-direction: column;
+    }
+    .body {
+
     }
 }
