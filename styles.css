@@ -132,11 +132,6 @@ body {
 
 /* Since you may have specific colors for each link, maintain those and only add hover changes */
 /* Example with custom colors retained */
-.email-button { background-color: #3498db; } /* Example color for email */
-.phone-button { background-color: #e74c3c; } /* Example color for phone */
-.github-button { background-color: #6e5494; } /* Example color for GitHub */
-.linkedin-button { background-color: #0077b5; } /* Example color for LinkedIn */
-.soundcloud-button { background-color: #ff7700; } /* Example color for SoundCloud */
 
 .email-button:hover,
 .phone-button:hover,
@@ -144,4 +139,26 @@ body {
 .linkedin-button:hover,
 .soundcloud-button:hover {
   background-color: darken($color, 10%); /* Darken on hover, use your preprocessor or JavaScript to adjust color dynamically */
+}
+/* Common styles for all link buttons */
+.link-button {
+    color: #000000; /* Default text color for all links */
+    /* Add other common styles here */
+}
+
+/* Hover styles for each link button */
+.phone-button:hover {
+    color: #007BFF; /* Example blue for phone links */
+}
+
+.github-button:hover {
+    color: #6e5494; /* GitHub's brand color */
+}
+
+.linkedin-button:hover {
+    color: #0077b5; /* LinkedIn's brand color */
+}
+
+.soundcloud-button:hover {
+    color: #ff5500; /* SoundCloud's brand color */
 }
