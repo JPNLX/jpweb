@@ -17,7 +17,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow: auto;
 }
 
 .card {
@@ -31,10 +30,11 @@ body {
 .profile-section {
     background: var(--link-normal);
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     border-radius: 50px; /* Very rounded corners for the profile section */
-    margin: 5px;
+    margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    overflow: auto;
 }
 
 .profile-image {
