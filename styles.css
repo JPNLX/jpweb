@@ -95,7 +95,7 @@ body {
 .image-square-container {
     /* This container helps in managing the shadow effects without altering the image directly */
     display: inline-block;  /* Makes the div wrap tightly around the image */
-    padding: 20px; /* Space for the outer shadow */
+    padding: 40px; /* Space for the outer shadow */
     background: white; /* Background matching your site's theme, necessary if the shadow is to blend naturally */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2) inset; /* Inward shadow */
     border-radius: 10%; /* Optional: if you want the shadows to have rounded corners */
