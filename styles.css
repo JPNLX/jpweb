@@ -20,12 +20,20 @@ body {
     overflow: auto;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .card {
     width: 90%;
     max-width: 400px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: inset 0 0 15px #e0e0e0; /* Golden inward shadow */
+    margin: 10px;
 }
 
 .profile-section {
@@ -84,10 +92,7 @@ body {
 }
 /* Media query for devices with a max width of 600px */
 @media (max-width: 600px) {
-    .profile-section {
-        padding: 20px; /* Further reduce padding for small screens */
-        margin: 10px; /* Further reduce margin */
+    .container {
+        flex-direction: column;
     }
-    .profile-image {
-        width: 90%; /* Slightly reduce image size */
-    }
+}
