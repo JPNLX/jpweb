@@ -38,13 +38,28 @@ body {
 .profile-section {
     background: var(--link-normal);
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px; /* Very rounded corners for the profile section */
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     overflow: auto;
 }
+.image-container {
+    /* This container helps in managing the shadow effects without altering the image directly */
+    display: inline-block;  /* Makes the div wrap tightly around the image */
+    padding: 20px; /* Space for the outer shadow */
+    background: white; /* Background matching your site's theme, necessary if the shadow is to blend naturally */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2) inset; /* Inward shadow */
+    border-radius: 50%; /* Optional: if you want the shadows to have rounded corners */
+}
 
+.image-container img {
+    display: block; /* Removes bottom space/gap under the image */
+    width: 100%; /* Responsive image scaling */
+    height: auto;
+    border-radius: 50%; /* Match the border-radius of the container if rounded corners are desired */
+    box-shadow: 0 0 4px 8px rgba(0, 0, 0, 0.1), /* Outer shadow */
+}
 .profile-image {
     width: 80%;
     aspect-ratio: 1; /* Keeps the image square */
@@ -52,13 +67,15 @@ body {
     border-radius: 50%; /* Circular image */
     display: block;
     margin: 0 auto;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .links-section {
     display: flex;
     flex-direction: column;
     gap: 10px; /* Spacing between buttons */
-    padding: 10px;
+    padding: 20px;
+    padding-top: 0px;
 }
 
 .link-button {
