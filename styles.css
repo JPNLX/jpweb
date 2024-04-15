@@ -23,7 +23,8 @@ body {
 .cards-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    width: 100%;
 }
 .card {
     display: flex;
@@ -95,5 +96,10 @@ body {
     .cards-container {
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card {
+        width: auto;
+        margin: 10px;
     }
 }
