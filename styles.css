@@ -161,3 +161,29 @@ body {
         background-attachment: scroll;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+    --background-gradient-start: #363636; /* Very light grey */
+    --background-gradient-end: #2f2f2f; /* Slightly darker light grey */
+    --link-normal: #353535; /* Very pale grey */
+    --link-hover: #474747; /* Light grey */
+    --text-color: #6a6a6a; /* Desaturated grey for text */
+
+    }
+    .card {
+        box-shadow: inset 0 0 15px #222222; /* Golden inward shadow */
+    }
+
+    .image-container {
+        background: #363636; /* Dark background for image container */
+    }
+    .link-button:hover {
+        box-shadow: inset 0 0 15px #1e1e1e; /* Golden inward shadow */
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Adding a blurrier shadow to text */
+        color: #1e1e1e;
+    }
+    .image-square-container {
+        background: #363636; /* Dark background for square image container */
+    }
+}

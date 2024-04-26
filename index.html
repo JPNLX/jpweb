@@ -13,7 +13,11 @@
         <div class="card">
             <div class="profile-section">
                 <div class="image-container">
-                    <img src="images/the_face2.png" alt="Your Name" class="profile-image">
+                    <picture>
+                        <source srcset="images/the_face.png" media="(prefers-color-scheme: dark)">
+                        <source srcset="images/the_face2.png" media="(prefers-color-scheme: light)">
+                        <img src="images/the_face2.png" alt="Your Name" class="profile-image">
+                    </picture>
                 </div>
                 <h1>Jean-Paul Bowé</h1>
                 <p class="title">Software Engineering Student</p>
@@ -32,7 +36,11 @@
         <div class="card">
             <div class="profile-qr">
                 <div class="image-square-container">
-                    <img src="images/qr_code.png" alt="Qr" class="squared-image">
+                    <picture>
+                        <source srcset="images/qr_code2.png" media="(prefers-color-scheme: dark)">
+                        <source srcset="images/qr_code.png" media="(prefers-color-scheme: light)">
+                        <img src="images/qr_code.png" alt="Qr" class="squared-image">
+                    </picture>
                 </div>
                 <p class="title">Scan To Share</p>
             </div>
