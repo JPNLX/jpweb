@@ -168,7 +168,7 @@ body {
     --background-gradient-end: #2f2f2f; /* Slightly darker light grey */
     --link-normal: #353535; /* Very pale grey */
     --link-hover: #474747; /* Light grey */
-    --text-color: #6a6a6a; /* Desaturated grey for text */
+    --text-color: #9a9a9a; /* Desaturated grey for text */
 
     }
     .card {
