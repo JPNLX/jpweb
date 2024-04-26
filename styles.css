@@ -172,18 +172,31 @@ body {
 
     }
     .card {
-        box-shadow: inset 0 0 15px #222222; /* Golden inward shadow */
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3) inset; /* Inward shadow */
     }
 
     .image-container {
         background: #363636; /* Dark background for image container */
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.4) inset; /* Inward shadow */
     }
     .link-button:hover {
         box-shadow: inset 0 0 15px #1e1e1e; /* Golden inward shadow */
-        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Adding a blurrier shadow to text */
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Adding a blurrier shadow to text */
         color: #1e1e1e;
     }
     .image-square-container {
         background: #363636; /* Dark background for square image container */
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3) inset; /* Inward shadow */
+    }
+    .profile-qr {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.23);
+
+    }
+    .profile-section {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.23);
+    }
+    .link-button {
+
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.23);
     }
 }
